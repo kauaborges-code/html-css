@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo da tela</title>
     <style>
         body {
+            /*
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: repeat-y;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed; */
+
+            /* 
+            Shorthand - background
+            color > image > position > repeat > [size] > attachment
+
+            Na shorthand por enquanto o size não está funcionando, por mais que a shorthand esteja certa
+            */
+
+            background: black url('imagens/wallpaper002.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             padding: 5px;
             border-radius: 10px;
