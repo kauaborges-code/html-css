@@ -66,16 +66,33 @@ section.normal {
     color: black;
 }
 
+section > p {
+    padding-bottom: 3.5em;
+}
+
 section.img {
     background-color: rgb(77, 77, 77);
     color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.438);
+    background-attachment: fixed;
 }
 
 section.img > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: hsla(0, 0%, 0%, 0.577);
     padding: 10px;
+    text-shadow: 2px 2px 0px black;
 
+}
+
+section#joaninha {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#jornal {
+    background-image: url('../imagens/background002.jpg');
 }
 
 /* FOOTER */
